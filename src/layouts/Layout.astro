@@ -8,44 +8,123 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content="{Astro.generator}" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+
+<style is:global lang="saas">
+
+	.btn-up {
+		animation: increase 400ms cubic-bezier(0.175, 0.885, 0.32, 1);
 	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+  
+  * {
+  	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+     transition: cubic-bezier(0.175, 0.885, 0.32, 1) 500ms;
+  	scroll-behavior: smooth;
+
+    
+  }
+
+  *::selection {
+    background-color: #ff8a00;
+    color: white;
+  }
+
+  :root {
+    --title-line-height: 0.35rem;
+  }
+
+  body {
+  	font-family: 'Signika Negative', sans-serif;
+    background-image: url('/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  section {
+    padding-bottom: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    header:before {
+      border-radius: 0;
+    }
+  }
+
+  /* UTILS */
+
+  .out {
+  	outline: 1px solid red;
+  }
+
+  .sublined
+  {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: var(--title-line-height);
+      border-radius: 0 100vmax 100vmax 0;
+      top: 54%;
+      right: 0;
+      background-color: #ff8a00;
+      animation: header-thicken 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.1);
+      z-index: 1;
+    }
+  }
+  /* ANIMATIONS */
+
+  @keyframes increase {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes header-thicken {
+    from {
+      height: calc(var(--title-line-height) * 12);
+      border-radius: 0;
+      background-color: #ffe4c2;
+    }
+    92% {
+      height: 0;
+      border-radius: 0;
+    }
+    96% {
+      height: var(--title-line-height);
+    }
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 </style>

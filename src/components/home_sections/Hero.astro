@@ -1,0 +1,95 @@
+---
+
+import Header from '../Header'
+
+---
+
+<section class="w-full min-h-screen pt-24 bg-dark" id="hero">
+  <Header subtitle={'Seja bem-vindo ao meu portfólio'}>  
+    Olá, sou Rondineli Brito
+  </Header>
+
+  <div class="mt-24 flex flex-wrap gap-10 justify-center">
+    <nav class="max-w-2xl flex-1 xsm:min-w-[500px] min-w-full">
+      <ul class="text-3xl text-white font-light flex flex-col gap-6">
+        <li data-about>
+          <a href="#about" class="flex items-center gap-4 w-max">
+            <div data-bar class="bg-primary_highlight shadow-bar sm:w-80 w-20" />
+            Sobre mim</a
+          >
+        </li>
+        <li data-cases>
+          <a href="#cases" class="flex items-center gap-4 w-max">
+            <div data-bar class="bg-primary shadow-bar sm:w-72 w-20" />
+            Cases</a
+          >
+        </li>
+        <li data-contact>
+          <a href="#contact" class="flex items-center gap-4 w-max">
+            <div data-bar class="bg-primary_subtitle shadow-bar sm:w-64 w-20" />
+            Redes</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <aside
+      class="flex-1 xxsm:min-w-[440px] text-xl py-4 pl-8 sm:pr-16 pr-8 text-white"
+    >
+      <p data-text="">
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum adipisci
+        vel iusto, fugiat natus porro voluptate quasi quae commodi fugit
+        perferendis ad eius sed amet, totam fuga molestias impedit tenetur
+        consectetur facere quidem nam. Tempore unde rerum similique facere illo
+        voluptatibus nulla distinctio, quo placeat, officiis eaque ab
+        consequatur commodi ea fugiat illum voluptate obcaecati doloremque hic
+        deleniti culpa iusto."
+      </p>
+    </aside>
+  </div>
+</section>
+
+<style lang="saas">
+
+  li:nth-child(2) [data-bar] {
+    animation-duration: 1400ms;
+
+  }
+
+  li:nth-child(3) [data-bar] {
+    animation-duration: 1000ms;
+  }
+
+  a {
+    &:hover {
+      color: #ff8a00;
+
+      [data-bar] {
+        width: 12rem;
+        max-width: 40vw;
+      }
+    }
+  }
+
+  [data-bar] {
+    display: inline-block;
+    height: 3.2rem;
+    border-radius: 0 2px 2px 0;
+    animation: increase 1800ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+
+
+  [data-text] {
+    animation: appear 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.1)
+  }
+
+  header [data-text] {
+    position: relative;
+    z-index: 1;
+    animation-duration: 1000ms;
+  }
+
+  aside [data-text] {
+    animation-duration: 800ms;
+  }
+
+</style>

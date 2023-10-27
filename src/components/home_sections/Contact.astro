@@ -1,0 +1,62 @@
+---
+import classNames from 'classnames';
+import Header from '../Header'
+---
+
+<section class="w-full min-h-screen sm:pt-12 pt-4 bg-dark" id="contact">
+  <Header> Redes </Header>
+
+  <article class="flex sm:items-center sm:min-h-[30rem]">
+    <div class={classNames(
+      'flex flex-wrap gap-8 container justify-between',
+      "mx-auto content",
+      'max-w-4xl sm:px-0 px-14'
+    )}>
+      <div class="flex-1 flex justify-end sm:min-w-[240px] min-w-full">
+        <img src="/photo.jpg" alt="Minha foto" class="w-72 rounded-md sm:mx-0 mx-auto">
+      </div>
+      <ul title="Redes sociais" class={classNames(
+        "flex flex-col flex-1 justify-center gap-2",
+        'text-white font-thin sm:text-lg text-base'
+      )}>
+        <li class="hover:text-primary_subtitle">
+          <img src="/icons/linkedin.svg" class="w-8" alt="icone do linkedin">
+          <a href="http://www.linkedin.com/in/rondinelibrito"
+           target="_blank"
+          >Linkedin</a
+          >
+        </li>
+        <li class="hover:text-primary_subtitle">
+          <img src="/icons/github.svg" class="w-8" alt="icone do github">
+          <a href="https://github.com/ronnie018"
+           target="_blank">GitHub</a>
+        </li>
+        <li class="hover:text-[#9CEDFF]">
+          <img src="/icons/portfolio.svg" class="w-8" alt="icone de portfolio">
+          <a href="https://portfolio-sage-nine-81.vercel.app/"
+           target="_blank"
+          >WebDev Portfolio</a>
+        </li>
+        <li class="hover:text-primary_subtitle">
+          <img src="/icons/email.svg" class="w-8" alt="icone de email">
+          <a href="malito:rondinelibrt18@gmail.com"
+           target="_blank">Email</a>
+        </li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<style lang="saas">
+  ul li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    &:hover {
+      a{
+        text-decoration: underline;
+      }
+    }
+  }
+</style>
