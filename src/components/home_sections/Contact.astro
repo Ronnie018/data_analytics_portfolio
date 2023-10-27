@@ -1,10 +1,11 @@
 ---
 import classNames from 'classnames';
 import Header from '../Header'
+import ContactItem from '../ContactItem'
 ---
 
 <section class="w-full min-h-screen sm:pt-12 pt-4 bg-dark" id="contact">
-  <Header> Redes </Header>
+  <Header>Redes</Header>
 
   <article class="flex sm:items-center sm:min-h-[30rem]">
     <div class={classNames(
@@ -13,50 +14,46 @@ import Header from '../Header'
       'max-w-4xl sm:px-0 px-14'
     )}>
       <div class="flex-1 flex justify-end sm:min-w-[240px] min-w-full">
-        <img src="/photo.jpg" alt="Minha foto" class="w-72 rounded-md sm:mx-0 mx-auto">
+        <img src="/photo.jpg" alt="Minha foto" class="w-72 rounded-md sm:mx-0 mx-auto" />
       </div>
       <ul title="Redes sociais" class={classNames(
         "flex flex-col flex-1 justify-center gap-2",
         'text-white font-thin sm:text-lg text-base'
       )}>
-        <li class="hover:text-primary_subtitle">
-          <img src="/icons/linkedin.svg" class="w-8" alt="icone do linkedin">
-          <a href="http://www.linkedin.com/in/rondinelibrito"
-           target="_blank"
-          >Linkedin</a
-          >
-        </li>
-        <li class="hover:text-primary_subtitle">
-          <img src="/icons/github.svg" class="w-8" alt="icone do github">
-          <a href="https://github.com/ronnie018"
-           target="_blank">GitHub</a>
-        </li>
-        <li class="hover:text-[#9CEDFF]">
-          <img src="/icons/portfolio.svg" class="w-8" alt="icone de portfolio">
-          <a href="https://portfolio-sage-nine-81.vercel.app/"
-           target="_blank"
-          >WebDev Portfolio</a>
-        </li>
-        <li class="hover:text-primary_subtitle">
-          <img src="/icons/email.svg" class="w-8" alt="icone de email">
-          <a href="malito:rondinelibrt18@gmail.com"
-           target="_blank">Email</a>
-        </li>
+        <ContactItem
+          href="https://www.linkedin.com/in/rondinelibrito/"
+          icon="/icons/linkedin.svg"
+          primary
+        >
+          LinkedIn
+        </ContactItem>
+
+        <ContactItem 
+          href="https://github.com/ronnie018"
+          icon="/icons/github.svg"
+          primary
+        >
+          GitHub
+        </ContactItem>
+
+        <ContactItem 
+          href="https://portfolio-sage-nine-81.vercel.app/"
+          icon="/icons/portfolio.svg"
+        >
+          WebDev Portfolio
+        </ContactItem>
+
+        <ContactItem
+          href="mailto:rondinelibrt18@gmail.com"
+          icon="/icons/email.svg"
+          primary
+        >
+          Email
+        </ContactItem>
       </ul>
     </div>
   </article>
 </section>
 
 <style lang="saas">
-  ul li {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-
-    &:hover {
-      a{
-        text-decoration: underline;
-      }
-    }
-  }
 </style>

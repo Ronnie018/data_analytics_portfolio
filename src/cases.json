@@ -2,67 +2,25 @@
   {
     "title": "FP20 2023",
     "desc": "Meu dashboard participante no desafio FP20 Data Analytics 2023",
-    "url": "https://www.fundacao-ifsp.com.br/fp20/",
-    "image": "/bg.jpg"
+    "url": "https://www.novypro.com/project/fp20-chalenge-entry",
+    "image": "/cases/fp20.png"
   },
   {
-    "title": "FP20 2023",
-    "desc": "Meu dashboard participante no desafio FP20 Data Analytics 2023",
-    "url": "https://www.fundacao-ifsp.com.br/fp20/",
-    "image": "/bg.jpg"
+    "title": "Dashboard Financeiro",
+    "desc": "Dashboard com temática Financeira, construido durante o curso intensivo da Nexos Educação",
+    "url": "https://www.novypro.com/project/dashboard-financeiro-3",
+    "image": "/cases/financeiro.png"
   },
   {
-    "title": "FP20 2023",
-    "desc": "Meu dashboard participante no desafio FP20 Data Analytics 2023",
-    "url": "https://www.fundacao-ifsp.com.br/fp20/",
-    "image": "/bg.jpg"
+    "title": "Dashboard de Vendas",
+    "desc": "Dashboard com temática de Vendas, construido durante o curso intensivo da Nexos Educação",
+    "url": "https://www.novypro.com/project/dashboard-vendas",
+    "image": "/cases/vendas.png"
   },
   {
-    "title": "FP20 2023",
-    "desc": "Meu dashboard participante no desafio FP20 Data Analytics 2023",
-    "url": "https://www.fundacao-ifsp.com.br/fp20/",
-    "image": "/bg.jpg"
-  },
-  {
-    "title": "FP20 2023",
-    "desc": "Meu dashboard participante no desafio FP20 Data Analytics 2023",
-    "url": "https://www.fundacao-ifsp.com.br/fp20/",
-    "image": "/bg.jpg"
-  },
-  {
-    "title": "FP20 2023",
-    "desc": "Meu dashboard participante no desafio FP20 Data Analytics 2023",
-    "url": "https://www.fundacao-ifsp.com.br/fp20/",
-    "image": "/bg.jpg"
-  },
-  {
-    "title": "FP20 2023",
-    "desc": "Meu dashboard participante no desafio FP20 Data Analytics 2023",
-    "url": "https://www.fundacao-ifsp.com.br/fp20/",
-    "image": "/bg.jpg"
-  },
-  {
-    "title": "FP20 2023",
-    "desc": "Meu dashboard participante no desafio FP20 Data Analytics 2023",
-    "url": "https://www.fundacao-ifsp.com.br/fp20/",
-    "image": "/bg.jpg"
-  },
-  {
-    "title": "FP20 2023",
-    "desc": "Meu dashboard participante no desafio FP20 Data Analytics 2023",
-    "url": "https://www.fundacao-ifsp.com.br/fp20/",
-    "image": "/bg.jpg"
-  },
-  {
-    "title": "FP20 2023",
-    "desc": "Meu dashboard participante no desafio FP20 Data Analytics 2023",
-    "url": "https://www.fundacao-ifsp.com.br/fp20/",
-    "image": "/bg.jpg"
-  },
-  {
-    "title": "FP20 2023",
-    "desc": "Meu dashboard participante no desafio FP20 Data Analytics 2023",
-    "url": "https://www.fundacao-ifsp.com.br/fp20/",
-    "image": "/bg.jpg"
+    "title": "Dashboard de Logística",
+    "desc": "Dashboard com temática de Logística, construido durante o curso intensivo da Nexos Educação",
+    "url": "https://www.novypro.com/project/logística",
+    "image": "/cases/logistica.png"
   }
 ]
